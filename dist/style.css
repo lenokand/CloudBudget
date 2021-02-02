@@ -11418,3 +11418,8 @@ footer a {
 footer .payment {
   width: 15vw;
 }
+@media screen and (max-width: 768px) {
+  footer .payment {
+    width: 200px;
+  }
+}
