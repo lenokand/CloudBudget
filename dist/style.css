@@ -33,6 +33,7 @@
   --bs-orange: #EE3D1B;
   --bs-black: #000;
   --bs-beige: #FAFAFA;
+  --bs-grey: rgba(19, 39, 67, 0.5);
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
@@ -3227,6 +3228,36 @@ textarea.form-control-lg {
   border-color: #FAFAFA;
 }
 
+.btn-grey {
+  color: #fff;
+  background-color: rgba(19, 39, 67, 0.5);
+  border-color: rgba(19, 39, 67, 0.5);
+}
+.btn-grey:hover {
+  color: #fff;
+  background-color: rgba(12, 26, 44, 0.575);
+  border-color: rgba(11, 22, 38, 0.6);
+}
+.btn-check:focus + .btn-grey, .btn-grey:focus {
+  color: #fff;
+  background-color: rgba(12, 26, 44, 0.575);
+  border-color: rgba(11, 22, 38, 0.6);
+  box-shadow: 0 0 0 0.25rem rgba(101, 114, 132, 0.5);
+}
+.btn-check:checked + .btn-grey, .btn-check:active + .btn-grey, .btn-grey:active, .btn-grey.active, .show > .btn-grey.dropdown-toggle {
+  color: #fff;
+  background-color: rgba(11, 22, 38, 0.6);
+  border-color: rgba(10, 20, 34, 0.625);
+}
+.btn-check:checked + .btn-grey:focus, .btn-check:active + .btn-grey:focus, .btn-grey:active:focus, .btn-grey.active:focus, .show > .btn-grey.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.25rem rgba(101, 114, 132, 0.5);
+}
+.btn-grey:disabled, .btn-grey.disabled {
+  color: #fff;
+  background-color: rgba(19, 39, 67, 0.5);
+  border-color: rgba(19, 39, 67, 0.5);
+}
+
 .btn-outline-primary {
   color: #ED4C5C;
   border-color: #ED4C5C;
@@ -3524,6 +3555,31 @@ textarea.form-control-lg {
 }
 .btn-outline-beige:disabled, .btn-outline-beige.disabled {
   color: #FAFAFA;
+  background-color: transparent;
+}
+
+.btn-outline-grey {
+  color: rgba(19, 39, 67, 0.5);
+  border-color: rgba(19, 39, 67, 0.5);
+}
+.btn-outline-grey:hover {
+  color: #fff;
+  background-color: rgba(19, 39, 67, 0.5);
+  border-color: rgba(19, 39, 67, 0.5);
+}
+.btn-check:focus + .btn-outline-grey, .btn-outline-grey:focus {
+  box-shadow: 0 0 0 0.25rem rgba(19, 39, 67, 0.5);
+}
+.btn-check:checked + .btn-outline-grey, .btn-check:active + .btn-outline-grey, .btn-outline-grey:active, .btn-outline-grey.active, .btn-outline-grey.dropdown-toggle.show {
+  color: #fff;
+  background-color: rgba(19, 39, 67, 0.5);
+  border-color: rgba(19, 39, 67, 0.5);
+}
+.btn-check:checked + .btn-outline-grey:focus, .btn-check:active + .btn-outline-grey:focus, .btn-outline-grey:active:focus, .btn-outline-grey.active:focus, .btn-outline-grey.dropdown-toggle.show:focus {
+  box-shadow: 0 0 0 0.25rem rgba(19, 39, 67, 0.5);
+}
+.btn-outline-grey:disabled, .btn-outline-grey.disabled {
+  color: rgba(19, 39, 67, 0.5);
   background-color: transparent;
 }
 
@@ -4856,6 +4912,15 @@ textarea.form-control-lg {
   color: #505050;
 }
 
+.alert-grey {
+  color: rgba(6, 13, 22, 0.7);
+  background-color: rgba(237, 238, 241, 0.9);
+  border-color: rgba(226, 228, 232, 0.85);
+}
+.alert-grey .alert-link {
+  color: rgba(4, 9, 15, 0.76);
+}
+
 @keyframes progress-bar-stripes {
   0% {
     background-position-x: 1rem;
@@ -5279,6 +5344,20 @@ textarea.form-control-lg {
   color: #fff;
   background-color: #646464;
   border-color: #646464;
+}
+
+.list-group-item-grey {
+  color: rgba(6, 13, 22, 0.7);
+  background-color: rgba(237, 238, 241, 0.9);
+}
+.list-group-item-grey.list-group-item-action:hover, .list-group-item-grey.list-group-item-action:focus {
+  color: rgba(6, 13, 22, 0.7);
+  background-color: rgba(209, 210, 212, 0.91);
+}
+.list-group-item-grey.list-group-item-action.active {
+  color: #fff;
+  background-color: rgba(6, 13, 22, 0.7);
+  border-color: rgba(6, 13, 22, 0.7);
 }
 
 .btn-close {
@@ -6244,6 +6323,13 @@ textarea.form-control-lg {
   color: #fbfbfb;
 }
 
+.link-grey {
+  color: rgba(19, 39, 67, 0.5);
+}
+.link-grey:hover, .link-grey:focus {
+  color: rgba(11, 22, 38, 0.6);
+}
+
 .ratio {
   position: relative;
   width: 100%;
@@ -6637,6 +6723,10 @@ textarea.form-control-lg {
 
 .border-beige {
   border-color: #FAFAFA !important;
+}
+
+.border-grey {
+  border-color: rgba(19, 39, 67, 0.5) !important;
 }
 
 .border-white {
@@ -7441,6 +7531,10 @@ textarea.form-control-lg {
   color: #FAFAFA !important;
 }
 
+.text-grey {
+  color: rgba(19, 39, 67, 0.5) !important;
+}
+
 .text-white {
   color: #fff !important;
 }
@@ -7527,6 +7621,10 @@ textarea.form-control-lg {
 
 .bg-beige {
   background-color: #FAFAFA !important;
+}
+
+.bg-grey {
+  background-color: rgba(19, 39, 67, 0.5) !important;
 }
 
 .bg-body {
@@ -11031,6 +11129,11 @@ textarea.form-control-lg {
 .header .navbar {
   height: 100px;
 }
+@media screen and (max-width: 1200px) {
+  .header .navbar #navbarSupportedContent {
+    background: linear-gradient(90deg, rgba(213, 32, 71, 0.99) 0%, rgba(238, 61, 27, 0.8) 100%);
+  }
+}
 .header .navbar .navbar-brand {
   font-weight: 700;
   text-transform: uppercase;
@@ -11258,4 +11361,60 @@ h3, .h3 {
 
 .pb-90 {
   padding-bottom: 90px;
+}
+
+.screen-contacts .contacts-form {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(19, 39, 67, 0.5);
+  border-radius: 6px;
+}
+.screen-contacts .selected-form {
+  color: rgba(19, 39, 67, 0.5);
+  border: 1px solid #333333;
+  border-radius: 6px;
+  padding: 15px 20px;
+}
+.screen-contacts .first-name-gap {
+  margin-right: 20px;
+}
+@media screen and (max-width: 576px) {
+  .screen-contacts .first-name-gap {
+    margin-right: 0;
+  }
+}
+.screen-contacts .button-submit {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  border: 1.5px solid #ED4C5C;
+  padding: 15px 25px;
+}
+.screen-contacts .contact-txt {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+}
+
+footer {
+  background: #FAFAFA;
+}
+footer h5, footer .h5 {
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #101010;
+}
+footer a {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 160%;
+  text-transform: capitalize;
+  color: #000000;
+  text-decoration: none;
+}
+footer .payment {
+  width: 15vw;
 }

@@ -6,6 +6,7 @@ $danger:#a32632;
 $orange:#EE3D1B;
 $black:#000;
 $beige:#FAFAFA;
+$grey: rgba(19, 39, 67, 0.5);
 
 @import 'node_modules/bootstrap/scss/functions';
 @import "node_modules/bootstrap/scss/variables";
@@ -16,6 +17,7 @@ $custom-colors:(
     "orange":$orange,
     "black":$black,
     "beige":$beige,
+    "grey":$grey,
 );
 $theme-colors: map-merge($theme-colors , $custom-colors );
 
@@ -39,8 +41,18 @@ $theme-colors: map-merge($theme-colors , $custom-colors );
     background-position: center;  
 
     .navbar{
+        
         height: 100px;
-
+       
+        
+        
+        #navbarSupportedContent{
+            @media screen and (max-width:1200px){
+                
+                background:linear-gradient(90deg, rgba(213, 32, 71, 0.99) 0%, rgba(238, 61, 27, 0.8) 100%);
+                
+            }
+        }
         .navbar-brand{
             font-weight: 700;
             text-transform: uppercase;
@@ -291,7 +303,73 @@ $theme-colors: map-merge($theme-colors , $custom-colors );
    .pb-90{
        padding-bottom:90px ;
    }
+.screen-contacts{
+.contacts-info{
+    // flex-basis: 20%;
+}
+.contacts-form{
+    // flex-basis: 33%;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
 
+    color: rgba(19, 39, 67, 0.5);
+
+border-radius: 6px;
+}
+.selected-form{
+    color: rgba(19, 39, 67, 0.5);
+    border: 1px solid #333333;
+    border-radius: 6px;
+    padding: 15px 20px;
+
+}
+.first-name-gap{
+    margin-right: 20px;
+    @media screen and(max-width: 576px){
+        margin-right:0;  
+        
+    }
+}
+.button-submit{
+    font-weight: normal;
+font-size: 14px;
+line-height: 17px;
+border: 1.5px solid #ED4C5C;
+padding: 15px 25px;
+}
+.contact-txt{
+    font-weight: normal;
+font-size: 14px;
+line-height: 140%;
+}
+
+}
+footer{
+    background: #FAFAFA;
+
+    h5{
+        margin-bottom: 30px;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 22px;
+         color: #101010;
+    }
+    a{
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 160%;
+        text-transform: capitalize;
+        color: #000000;
+        text-decoration: none;
+    }
+    .payment{
+        width: 15vw;
+        @media screen and (max-width:768px){
+            
+        }
+    }
+}
 
 
 
